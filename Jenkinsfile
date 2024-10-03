@@ -5,4 +5,7 @@ node("linux") {
     stage('Checkfiles') {
         sh 'ls -la'
     }
+    stage('Setup Java') {
+        java -version
+    }
 }
