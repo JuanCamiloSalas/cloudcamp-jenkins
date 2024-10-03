@@ -6,6 +6,6 @@ node("linux") {
         sh 'ls -la'
     }
     stage('Setup Java') {
-        java -version
+        sh 'java -version'
     }
 }
